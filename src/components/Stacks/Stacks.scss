@@ -1,0 +1,33 @@
+.stacks {
+  h3 {
+    font-family: 'Red Hat Display';
+    color: #3f3d56;
+    font-weight: 500;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+    .stack-list {
+        margin: 1em 2em;
+      &__name-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          height: 25px;
+        }
+        p {
+          font-family: 'Red Hat Display';
+          color: #3f3d56;
+          font-weight: 400;
+          margin-left: 1em;
+        }
+      }
+    }
+  }
+}

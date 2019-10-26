@@ -1,0 +1,31 @@
+.languages {
+  margin: 2em auto;
+  padding: 2em 0;
+  h3 {
+    font-family: 'Red Hat Display';
+    color: #3f3d56;
+    font-weight: 500;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  &__wrap {
+    margin: 2em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .language-list {
+      min-width: 300px;
+      margin: 2em;
+      width: 100%;
+      max-width: 500px;
+      p {
+        margin: 0;
+        padding: 0;
+        font-family: 'Red Hat Display';
+        color: #3f3d56;
+        font-weight: 600;
+        font-size: 0.9em;
+      }
+    }
+  }
+}
