@@ -1,0 +1,19 @@
+.welcome {
+  height: 700px;
+  margin: 2em 0;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 700px) {
+    flex-flow: column;
+    justify-content: center;
+  }
+  .developer-svg-icon, &__info {
+    min-width: 300px;
+    width: 40%;
+    @media screen and (max-width: 700px) {
+      width: 80%;
+    }
+  }
+}
