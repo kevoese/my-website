@@ -1,3 +1,11 @@
-div {
-    color: blue
+*{
+    box-sizing: border-box;
+}
+
+a, input, button {
+    outline: none;
+}
+
+li {
+    list-style: none;
 }

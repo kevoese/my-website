@@ -1,0 +1,40 @@
+.hamburger {
+  .hamburger-icon {
+    width: 45px;
+    display: block;
+    .box {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 15% 75%;
+      grid-gap: 10%;
+      height: 4px;
+      justify-content: flex-start;
+      margin-top: 3px;
+      
+      .first, .last {
+        background-color: #3F3D56;
+      }
+    }
+    .box2, .box3 {
+      grid-template-columns: 15% 55%;
+      transition: transform 0.3s linear;
+    }
+  }
+
+  .cut-icon {
+      .box1, .box4 {
+          transform: scaleY(0);
+      }
+      .box2, .box3 {
+          .first {
+              transform: scale(0);
+          }
+      }
+      .box2 {
+          transform: translateY(calc(50% + 1.5px)) rotate(45deg);
+      }
+      .box3 {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+  }
+}
