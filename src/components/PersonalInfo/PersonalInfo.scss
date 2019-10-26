@@ -1,0 +1,46 @@
+.personal-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 47%;
+    min-width: 400px;
+    margin: 1em auto 2em;
+    @media screen and (max-width: 500px) {
+        min-width: 300px;
+      }
+  img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.25);
+    margin-right: 1em;
+  }
+
+  &__bio {
+      margin-left: 1em;
+      min-width: 250px;
+    &__wrap {
+    .info-list {
+      display: flex;
+      align-items: center;
+      margin: 1em auto;
+      strong {
+        width: 70px;
+        font-family: 'Salsa';
+        font-size: 0.9em;
+        text-align: left;
+        margin-right: 1em;
+      }
+      p {
+        font-family: 'Red Hat Display';
+        font-weight: 400;
+        font-size: 0.8em;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}
+}

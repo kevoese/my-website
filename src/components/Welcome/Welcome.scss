@@ -11,9 +11,13 @@
   }
   .developer-svg-icon, &__info {
     min-width: 300px;
+    margin: 1em;
     width: 40%;
     @media screen and (max-width: 700px) {
       width: 80%;
     }
+  }
+  &__info {
+    max-width: 500px;
   }
 }

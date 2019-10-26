@@ -1,0 +1,40 @@
+.services {
+  width: 47%;
+  margin: 2em auto 1em;
+  min-width: 400px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 500px) {
+    min-width: 300px;
+  }
+  h2 {
+    font-family: 'Red Hat Display';
+    margin: 0 0 0.5em;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .service-list-wrap {
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+  .service-list {
+    display: flex;
+    flex-flow: column;
+    margin: 1em;
+    img {
+      width: 50px;
+      height: 40px;
+    }
+    h3 {
+        font-family: 'Red Hat Display';
+        font-size: 0.9em;
+        font-weight: 600;
+    }
+  }
+}
+}
