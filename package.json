@@ -2,7 +2,7 @@
   "name": "my-website",
   "version": "1.0.0",
   "description": "My personal website for showing my works",
-  "main": "server/index.js",
+  "main": "src/App.js",
   "scripts": {
     "test": "",
     "build": "rimraf dist && mkdir dist && webpack",
