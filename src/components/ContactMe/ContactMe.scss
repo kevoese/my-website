@@ -19,7 +19,7 @@
       center no-repeat;
     background-size: cover;
     border-radius: 0px 2.5em 0px 2.5em;
-    animation: showForm 0.5s ease backwards;
+    animation: showForm-animate 0.5s ease backwards;
     @media screen and (max-width: 500px) {
         margin-right: 0em;
       }
