@@ -6,7 +6,7 @@
   "scripts": {
     "test": "",
     "build": "rimraf dist && mkdir dist && webpack",
-    "start": "npm run build && node server/index.js",
+    "start": "node server/index.js",
     "dev": "webpack-dev-server",
     "eslint": "eslint"
   },
