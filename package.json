@@ -5,7 +5,7 @@
   "main": "src/App.js",
   "scripts": {
     "test": "",
-    "build": "rimraf dist && mkdir dist && webpack",
+    "build-app": "rimraf dist && mkdir dist && webpack",
     "start": "node server/index.js",
     "dev": "webpack-dev-server",
     "eslint": "eslint"
