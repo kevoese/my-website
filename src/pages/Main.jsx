@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Welcome from '../components/Welcome';
 import AboutMe from '../components/AboutMe';
 import MyWorks from '../components/MyWorks';
+import WhyHireMe from '../components/WhyHireMe';
 
 const Main = () => (
   <div>
@@ -10,6 +11,7 @@ const Main = () => (
     <Welcome />
     <AboutMe />
     <MyWorks />
+    <WhyHireMe />
   </div>
 );
 
