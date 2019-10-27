@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import TypeWriterEffect from 'react-typewriter-effect';
 import DeveloperSvg from '../../assets/DeveloperSvg';

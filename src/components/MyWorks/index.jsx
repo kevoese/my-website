@@ -1,7 +1,6 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import './MyWorks.scss';
-import SliderMenu from 'react-slider-menu';
+import SliderMenu from 'react-slider-menu-package';
 import ProjectDiv from './ProjectDiv';
 
 const MyWorks = () => (
