@@ -4,6 +4,7 @@ import Welcome from '../components/Welcome';
 import AboutMe from '../components/AboutMe';
 import MyWorks from '../components/MyWorks';
 import WhyHireMe from '../components/WhyHireMe';
+import Footer from '../components/Footer';
 
 const Main = () => (
   <div>
@@ -12,6 +13,7 @@ const Main = () => (
     <AboutMe />
     <MyWorks />
     <WhyHireMe />
+    <Footer />
   </div>
 );
 

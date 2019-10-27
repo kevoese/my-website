@@ -11,9 +11,9 @@ const PersonalInfo = () => (
     <div className="personal-info__bio flex-center">
       <div className="personal-info__bio__wrap">
         <InfoList label="Name:" detail="Kelvin Esegbona" />
-        <InfoList label="Age:" detail="24 years" />
-        <InfoList label="Email:" detail="kevoesegbona@gmail.com" />
+        <InfoList label="Github:" detail="kevoese" />
         <InfoList label="Address:" detail="Lagos, Nigeria" />
+        <InfoList label="Hobbies:" detail="Pencil drawing, playing video games, football" />
       </div>
     </div>
   </div>
