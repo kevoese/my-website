@@ -5,9 +5,10 @@
   "main": "src/App.js",
   "scripts": {
     "test": "",
-    "build-app": "rimraf dist && mkdir dist && webpack",
+    "build-app": "rimraf dist && mkdir dist && webpack --mode=production",
     "start": "node server/index.js",
-    "dev": "webpack-dev-server",
+    "devserver": "nodemon server/index.js",
+    "dev": "webpack-dev-server --mode=development",
     "eslint": "eslint"
   },
   "husky": {
@@ -17,7 +18,7 @@
   },
   "lint-staged": {
     "**/**/*.{js,json, scss}": [
-      "eslint --ext .json --ext .js --ext .scss --fix",
+      "eslint --ext .js --ext .scss --fix",
       "git add"
     ]
   },
@@ -53,6 +54,7 @@
     "lint-staged": "^8.2.1",
     "mini-css-extract-plugin": "^0.7.0",
     "node-sass": "^4.12.0",
+    "nodemon": "^1.19.4",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
@@ -65,10 +67,14 @@
   },
   "dependencies": {
     "@babel/node": "^7.5.5",
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "dotenv": "^8.0.0",
     "dotenv-webpack": "^1.7.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "express": "^4.17.1",
+    "mailgun-js": "^0.22.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-animated-progress-bar": "^1.0.0",

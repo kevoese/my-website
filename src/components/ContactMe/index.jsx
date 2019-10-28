@@ -1,12 +1,41 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import './ContactMe.scss';
 import TypeWriterEffect from 'react-typewriter-effect';
+import { StoreContext } from '../../Context/WithStore';
 
 const ContactMe = () => {
   const [showForm, setShowForm] = useState(false);
+  const { handleSendMail, mailState } = useContext(StoreContext);
+  const initialState = {
+    fullName: '',
+    email: '',
+    message: '',
+  };
+  const [values, setValues] = useState({
+    ...initialState,
+  });
+
   const handleClick = () => {
     setShowForm(prevState => !prevState);
   };
+
+  const handleChange = (e) => {
+    e.persist();
+    setValues(prevValues => ({
+      ...prevValues,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    handleSendMail(values);
+  };
+
+  useEffect(() => {
+    if (!mailState.loading && !mailState.errorState) { setValues(initialState); }
+  }, [mailState.loading]);
+
   return (
     <div className="contact-me-form-wrap">
       {showForm ? (
@@ -55,20 +84,46 @@ const ContactMe = () => {
               />
             </div>
           </div>
-          <div className="contact-me-form__sect2">
-            <input type="email" placeholder="Drop Your Email..." />
-            <input type="text" placeholder="Name" />
-          </div>
-          <div className="contact-me-form__sect3">
-            <textarea placeholder="Write your message..." />
-            <button type="button">
-              <span>Send</span>
-              <img
-                src="https://res.cloudinary.com/dflmq4zxb/image/upload/v1572194892/arrows_rkdjju.svg"
-                alt=""
+          <form onSubmit={handleSubmit}>
+            <div className="contact-me-form__sect2">
+              <input
+                type="email"
+                name="email"
+                value={values.email}
+                onChange={handleChange}
+                placeholder="Drop Your Email..."
+                required
               />
-            </button>
-          </div>
+              <input
+                type="text"
+                name="fullName"
+                value={values.fullName}
+                onChange={handleChange}
+                placeholder="Name"
+                pattern="^[a-zA-Z '.-]{3,30}$"
+                required
+              />
+            </div>
+            <div className="contact-me-form__sect3">
+              <textarea
+                name="message"
+                value={values.message}
+                onChange={handleChange}
+                placeholder="Write your message..."
+                required
+              />
+              <button
+                disabled={mailState.loading}
+                type="submit"
+              >
+                <span>{mailState.loading ? 'Sending...' : 'Send'}</span>
+                <img
+                  src="https://res.cloudinary.com/dflmq4zxb/image/upload/v1572194892/arrows_rkdjju.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+          </form>
         </div>
       ) : (
         ''
