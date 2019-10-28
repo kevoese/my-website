@@ -1,31 +1,28 @@
 /* eslint-disable no-console */
 require('dotenv').config();
 
-const mailgun = require('mailgun-js');
+const sgMail = require('@sendgrid/mail');
 
 const sendMail = ({
   name, email, message, res,
 }) => {
-  const mg = mailgun({
-    apiKey: process.env.API_KEY,
-    domain: process.env.DOMAIN_NAME,
-  });
-
-  const data = {
-    from: `${name} ${email}`,
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+  const msg = {
     to: 'kevoesegbona@gmail.com',
+    from: email,
     subject: 'New Mail from hire my service',
     text: message,
   };
-  return mg.messages().send(data, (error) => {
-    if (error) {
-      return res.status(400).send({
-        message: 'Message not sent. Something went wrong',
+  sgMail.send(msg, (err, result) => {
+    if (err) {
+      return res.status(200).send({
+        message: 'Message not Sent. something went wrong',
+        error: err.message,
       });
     }
-
     return res.status(200).send({
       message: `Message sent successfully. Thank you ${name} for reaching out.`,
+      result: result.message,
     });
   });
 };
