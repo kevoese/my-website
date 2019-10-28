@@ -67,6 +67,7 @@
   },
   "dependencies": {
     "@babel/node": "^7.5.5",
+    "@sendgrid/mail": "^6.4.0",
     "axios": "^0.19.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
@@ -74,7 +75,6 @@
     "dotenv-webpack": "^1.7.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "express": "^4.17.1",
-    "mailgun-js": "^0.22.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-animated-progress-bar": "^1.0.0",
