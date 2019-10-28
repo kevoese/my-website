@@ -6,9 +6,12 @@ import MyWorks from '../components/MyWorks';
 import WhyHireMe from '../components/WhyHireMe';
 import Footer from '../components/Footer';
 import ContactMe from '../components/ContactMe';
+import { withStore } from '../Context/WithStore';
+import ToastMessage from '../components/ToastMessage';
 
 const Main = () => (
   <div>
+    <ToastMessage />
     <Navbar />
     <Welcome />
     <AboutMe />
@@ -19,4 +22,4 @@ const Main = () => (
   </div>
 );
 
-export default Main;
+export default withStore(Main);
