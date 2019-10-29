@@ -1,23 +1,46 @@
 .welcome {
-  height: 700px;
-  margin: 2em 0;
-  padding: 0 10%;
+  min-height: 100vh;
+  margin: 2em auto;
+  width: 80%;
+  max-width: 1400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 800px) {
     flex-flow: column;
     justify-content: center;
   }
   .developer-svg-icon, &__info {
     min-width: 300px;
     margin: 1em;
-    width: 40%;
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 800px) {
       width: 80%;
     }
   }
   &__info {
     max-width: 500px;
+    width: 40%;
+    animation: opace 2s 1s linear backwards, slideInLeft 1s 8s ease backwards;
+  }
+
+  @keyframes slideInLeft {
+    0% {
+        transform: translateX(10%);
+    }
+  
+    100% {
+      transform: translateX(0%);
+  }
+  }
+
+  @keyframes opace {
+    0% {
+        opacity: 0;
+        transform: translateX(20%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(20%);
+  }
   }
 }

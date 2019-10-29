@@ -1,28 +1,37 @@
 .why-hire-me {
   width: 80%;
   margin: 2em auto;
-
+  min-height: 100vh;
+ display: flex;
+ flex-flow: column;
   h2 {
     color: #3f3d56;
     text-align: center;
     font-size: 2em;
     font-family: 'Salsa';
   }
-
+ &__illustration-wrap 
+ {
+   flex-grow: 1;
+   display: flex;
+   flex-flow: column;
+   justify-content: space-around;
   &__section {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 4em auto;
+    width: -webkit-fill-available;
+    max-width: 1400px;
     img {
         min-width: 300px;
         width: 50%;
         max-width: 400px;
         margin: 1em;
+        opacity: 0;
     }
 
     &__info {
-        width: 40%;
         min-width: 300px;
         margin: 1em;
       h2 {
@@ -31,6 +40,7 @@
         font-size: 1.5em;
         font-family: 'Red Hat Display';
         font-weight: 600;
+        opacity: 0;
       }
       p {
         color: #3f3d56;
@@ -38,6 +48,7 @@
         font-size: 1.2em;
         font-family: 'Red Hat Display';
         font-weight: 400;
+        opacity: 0;
       }
     }
   }
@@ -46,5 +57,81 @@
   }
   .creative-thinker {
       flex-wrap: wrap-reverse;
+
   }
+
+  .team-player, .creative-thinker {
+    // min-height: 50vh;
+    // display: flex;
+    // align-items: center;
+    margin: 3em auto;
+  }
+
+  .team-player-animate {
+    h2 {
+      animation: slideInLeftCreative 2s ease both;
+    }
+    p {
+      animation: slideInUp 0.5s 1s ease both;
+    }
+    img {
+      animation: opaceGrow 0.5s 2s ease both;
+    }
+  }
+
+  .creative-sect-animate {
+    h2 {
+      animation: slideInRightCreative 2s ease both;
+    }
+    p {
+      animation: slideInUp 0.5s 1s ease both;
+    }
+    img {
+      animation: opaceGrow 0.5s 2s ease both;
+    }
+  }
+}
+@keyframes slideInLeftCreative {
+  from{
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideInRightCreative {
+  from{
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideInUp {
+  from{
+    opacity: 0;
+    transform: translateY(150%);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes opaceGrow {
+  from{
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 }

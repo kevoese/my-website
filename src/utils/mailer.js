@@ -1,19 +1,6 @@
+import { axiosCall } from './index';
+
 /* eslint-disable no-console */
-import axios from 'axios';
-
-const axiosCall = async ({ url, data, method }) => {
-  const result = await axios({
-    url,
-    method: method || 'GET',
-    data,
-    headers: {
-      Accept: 'application/json',
-      'Content-type': 'application/json',
-    },
-  });
-  return result.data;
-};
-
 
 const mailer = async (data, setMailState) => {
   // make api call

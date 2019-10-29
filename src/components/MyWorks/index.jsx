@@ -4,7 +4,7 @@ import SliderMenu from 'react-slider-menu-package';
 import ProjectDiv from './ProjectDiv';
 
 const MyWorks = () => (
-  <div className="my-works">
+  <div className="my-works" id="myworks">
     <h2 className="my-works__title">My Works</h2>
     <div className="my-works__slider-wrap">
       <SliderMenu

@@ -49,7 +49,7 @@ const ContactMe = () => {
                   color: 'white',
                 }}
                 cursorColor="white"
-                text="Hello"
+                text="Hello there"
                 hideCursorAfterText
                 typeSpeed={100}
               />
@@ -145,7 +145,7 @@ const ContactMe = () => {
           </svg>
         ) : (
           <img
-            src="https://res.cloudinary.com/dflmq4zxb/image/upload/v1572191566/message_wx7jup.svg"
+            src="https://res.cloudinary.com/dflmq4zxb/image/upload/v1572593807/messageMe_uagwv3.svg"
             alt=""
           />
         )}

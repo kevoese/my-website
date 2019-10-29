@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
 a, input, button, textarea {
     outline: none;
 }
@@ -20,6 +23,11 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
+    .main-app{
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+    }
 }
 
 
@@ -72,25 +80,43 @@ body {
   
   @keyframes messageMeNow-animate {
     0% {
-      transform: rotate(10deg);
+      transform: translateY(0%);
     }
-    5% {
-      transform: rotate(-10deg);
+    4% {
+      transform: translateY(-75%);
     }
-    10% {
-      transform: rotate(20deg);
+    8% {
+      transform: translateY(0%);
     }
     15% {
-      transform: rotate(-5deg);
+      transform: translateY(-50%);
     }
-    20% {
-      transform: rotate(0deg);
+    22% {
+      transform: translateY(0%);
+    }
+    31% {
+      transform: translateY(-25%);
+    }
+    40% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(-10%);
+    }
+    60% {
+      transform: translateY(0%);
+    }
+    60% {
+      transform: translateY(5%);
     }
     75% {
-      transform: rotate(0deg);
+      transform: translateY(0%);
+    }
+    75% {
+      transform: translateY(1%);
     }
     100% {
-      transform: rotate(0deg);
+      transform: translateY(0);
     }
   }
   

@@ -12,15 +12,17 @@ const Navbar = () => {
   return (
     <div className="navbar-wrap">
       <div className="navbar">
-        <button type="button">
-          <span>Hire Me</span>
-          <HireMeIcon />
-        </button>
+        <div className="btn-wrap">
+          <button type="button">
+            <span>Hire Me</span>
+            <HireMeIcon />
+          </button>
+        </div>
+
         <div className="navbar__nav-links">
-          <span>About me</span>
-          <span>Skills</span>
-          <span>My Works</span>
-          <span>Contact</span>
+          <a href="#aboutme">About me</a>
+          <a href="#skills">Skills</a>
+          <a href="#myworks">My Works</a>
         </div>
         <Hamburger close={dropdown} handleDropdown={handleDropdown} />
       </div>

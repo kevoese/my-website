@@ -1,0 +1,40 @@
+.developer-svg-icon {
+    animation: slideUp 0.7s 3s linear both, slideIn 1s 8s ease forwards;
+    .developer-idea1-svg {
+        animation: opaceUp 0.5s 5.2s linear backwards;
+    }
+    .developer-idea2-svg {
+        animation: opaceUp 0.5s 5s linear backwards;
+    }
+
+@keyframes slideIn {
+  0% {
+      transform: scale(1) translate(-10%, 0);
+  }
+
+  100% {
+    transform:scale(1) translate(0);
+}
+}
+
+@keyframes opaceUp {
+    from{
+        opacity: 0;
+      }
+      to{
+        opacity: 1;
+      }
+  }
+
+@keyframes slideUp {
+    from{
+        opacity: 0;
+        transform: scale(0.9) translateX(-10%)
+      }
+      to{
+        opacity: 1;
+        transform: scale(1) translateX(-10%)
+      }
+  }
+}
+
