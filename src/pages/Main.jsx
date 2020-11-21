@@ -10,7 +10,7 @@ import { withStore } from '../Context/WithStore';
 import ToastMessage from '../components/ToastMessage';
 
 const Main = () => (
-  <div>
+  <div className="main-app">
     <ToastMessage />
     <Navbar />
     <Welcome />

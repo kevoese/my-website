@@ -12,6 +12,7 @@ const Welcome = () => (
         cursorColor="#3F3D56"
         text="Hi, I am Kelvin Esegbona."
         hideCursorAfterText
+        startDelay={1000}
         typeSpeed={40}
       />
       <TypeWriterEffect
@@ -21,14 +22,16 @@ const Welcome = () => (
           fontWeight: 400,
           fontSize: '1.5em',
         }}
-        startDelay={4000}
+        startDelay={5000}
         cursorColor="#3F3D56"
         multiText={[
-          'I am a Software Engineer',
-          'I am good at problem solving...',
-          'A creative designer',
+          'Hey there, Welcome to hire me.',
+          'I\'m a Software Engineer...',
+          'A Freelancer available for hiring...',
+          'I\'m good at problem solving...',
+          'A creative designer...',
           'A Team Player',
-          'Hire me now',
+          'To get my service, reach out to me now.',
         ]}
         multiTextDelay={3000}
         typeSpeed={80}
