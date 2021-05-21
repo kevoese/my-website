@@ -5,7 +5,7 @@ import InfoList from './InfoList';
 const PersonalInfo = () => (
   <div className="personal-info">
     <img
-      src="https://res.cloudinary.com/dflmq4zxb/image/upload/v1572092734/IMG_20190730_071419_6_jeeoos.jpg"
+      src="https://res.cloudinary.com/dflmq4zxb/image/upload/v1621626984/20210411_154951_kbekz1.jpg"
       alt=""
     />
     <div className="personal-info__bio flex-center">
@@ -13,7 +13,7 @@ const PersonalInfo = () => (
         <InfoList label="Name:" detail="Kelvin Esegbona" />
         <InfoList label="Github:" detail="kevoese" />
         <InfoList label="Address:" detail="Lagos, Nigeria" />
-        <InfoList label="Hobbies:" detail="Pencil drawing, playing video games, football" />
+        <InfoList label="Hobbies:" detail="⚽️  Sports,   Code  👨🏾‍💻" />
       </div>
     </div>
   </div>

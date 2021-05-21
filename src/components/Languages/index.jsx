@@ -7,9 +7,9 @@ const Languages = () => (
     <h3>Languages</h3>
     <div className="languages__wrap">
       <LanguageList name="JavaScript" score="75" />
-      <LanguageList name="HTML/CSS" score="85" />
+      <LanguageList name="SQL" score="85" />
       <LanguageList name="C/Embedded C" score="80" />
-      <LanguageList name="TypeScript" score="50" />
+      <LanguageList name="TypeScript" score="65" />
     </div>
   </div>
 );

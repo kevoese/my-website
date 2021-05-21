@@ -98,7 +98,7 @@
         resize: none;
         color: rgb(116, 116, 116);
       }
-      button {
+      button, .btn-design {
         margin: 0.5em 1em 0 auto;
         border: 1px solid #0061f3;
         border-radius: 5px;
@@ -154,5 +154,21 @@
     }
     }
     
+  }
+
+  .btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    button{
+      margin-left: 0;
+    }
+    .btn-design {
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
   }
 }

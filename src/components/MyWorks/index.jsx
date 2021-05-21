@@ -16,37 +16,40 @@ const MyWorks = () => (
         elementsMinWidth={350}
       >
         <ProjectDiv
+          appLink="https://paymentgateway.accessbankplc.com/#/"
+          imgLink="https://res.cloudinary.com/dflmq4zxb/image/upload/v1621627721/Screen_Shot_2021-05-21_at_8.30.00_PM_tiubjw.png"
+        />
+        <ProjectDiv
+          appLink="https://nn-ship-maintenance.herokuapp.com/#/"
+          imgLink="https://res.cloudinary.com/dflmq4zxb/image/upload/v1621629452/Screen_Shot_2021-05-21_at_9.39.27_PM_hqtq2u.png"
+        />
+        <ProjectDiv
+          appLink="https://payfi.ng/#/"
+          imgLink="https://res.cloudinary.com/dflmq4zxb/image/upload/v1621628629/Screen_Shot_2021-05-21_at_9.16.59_PM_psf3oy.png"
+        />
+        <ProjectDiv
+          appLink="http://dhml-staging.herokuapp.com/#/"
+          imgLink="https://res.cloudinary.com/dflmq4zxb/image/upload/v1621628627/Screen_Shot_2021-05-21_at_9.23.48_PM_u4oxce.png"
+        />
+        <ProjectDiv
           appLink="https://demeter-ah-frontend-staging.herokuapp.com/"
           imgLink="https://res.cloudinary.com/dflmq4zxb/image/upload/v1572108439/Screen_Shot_2019-10-25_at_10.33.32_AM_o7vila.png"
         />
         <ProjectDiv
-          appLink="https://my-diary-angular.herokuapp.com/"
-          imgLink="https://res.cloudinary.com/dflmq4zxb/image/upload/v1572108432/Screen_Shot_2019-10-25_at_9.21.11_AM_scwpfy.png"
+          appLink="https://payfi.netlify.app/#/register/verify-email"
+          imgLink="https://res.cloudinary.com/dflmq4zxb/image/upload/v1621628458/Screen_Shot_2021-05-21_at_9.21.42_PM_i7rmat.png"
         />
         <ProjectDiv
-          appLink="https://hello-books-deferral-staging.herokuapp.com/"
-          imgLink="https://res.cloudinary.com/dflmq4zxb/image/upload/v1572108431/Screen_Shot_2019-10-25_at_9.24.23_AM_iu0hmb.png"
+          imgLink="https://res.cloudinary.com/dflmq4zxb/image/upload/v1621628629/Screen_Shot_2021-05-21_at_9.24.31_PM_einydk.png"
+          appLink="https://payfi-merchant-web.herokuapp.com/"
         />
-        <ProjectDiv
-          appLink="https://kevoese.github.io/Epic-mail/UI/epic-mail.html"
-          imgLink="https://res.cloudinary.com/dflmq4zxb/image/upload/v1572110611/Screen_Shot_2019-10-26_at_6.17.21_PM_fzolzm.png"
-        />
-        <ProjectDiv
-          appLink="https://epic-mail-react-app.herokuapp.com/#/"
-          imgLink="https://res.cloudinary.com/dflmq4zxb/image/upload/v1572110587/Screen_Shot_2019-10-26_at_6.21.10_PM_tg3li7.png"
-        />
-        <ProjectDiv
-          appLink="https://crypto-book-order-app-react.herokuapp.com/"
-          imgLink="https://res.cloudinary.com/dflmq4zxb/image/upload/v1572110595/Screen_Shot_2019-10-26_at_6.18.56_PM_jisamy.png"
-        />
-        <ProjectDiv imgLink="https://res.cloudinary.com/dflmq4zxb/image/upload/v1572110675/Screen_Shot_2019-10-26_at_6.20.09_PM_jnin7m.png" />
         <ProjectDiv
           appLink="https://lyrics-app-react.herokuapp.com/"
           imgLink="https://res.cloudinary.com/dflmq4zxb/image/upload/v1572110588/Screen_Shot_2019-10-26_at_6.22.22_PM_v4txrg.png"
         />
         <ProjectDiv
-          appLink="https://busha-admin-dashboars-app.herokuapp.com/balances"
-          imgLink="https://res.cloudinary.com/dflmq4zxb/image/upload/v1572111009/Screen_Shot_2019-10-26_at_6.27.29_PM_mxpny0.png"
+          appLink="https://hire-my-services.herokuapp.com/"
+          imgLink="https://res.cloudinary.com/dflmq4zxb/image/upload/v1621629162/Screen_Shot_2021-05-21_at_9.34.33_PM_rxiqqe.png"
         />
       </SliderMenu>
     </div>

@@ -112,16 +112,30 @@ const ContactMe = () => {
                 placeholder="Write your message..."
                 required
               />
-              <button
-                disabled={mailState.loading}
-                type="submit"
-              >
-                <span>{mailState.loading ? 'Sending...' : 'Send'}</span>
-                <img
-                  src="https://res.cloudinary.com/dflmq4zxb/image/upload/v1572194892/arrows_rkdjju.svg"
-                  alt=""
-                />
-              </button>
+              <div className="btn-wrap">
+                <a
+                  className="btn-design"
+                  href="/public/my-cv.pdf"
+                  target="_blank"
+                >
+                  <span>Download my cv</span>
+                  <img
+                    src="https://res.cloudinary.com/dflmq4zxb/image/upload/v1621631493/Download_rbkjnp.png"
+                    alt=""
+                  />
+                </a>
+                <button
+                  disabled={mailState.loading}
+                  type="submit"
+                >
+                  <span>{mailState.loading ? 'Sending...' : 'Send'}</span>
+                  <img
+                    src="https://res.cloudinary.com/dflmq4zxb/image/upload/v1572194892/arrows_rkdjju.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+
             </div>
           </form>
         </div>

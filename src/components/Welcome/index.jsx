@@ -1,11 +1,12 @@
 import React from 'react';
 import TypeWriterEffect from 'react-typewriter-effect';
 import DeveloperSvg from '../../assets/DeveloperSvg';
+import NewDeveloperImg from '../../assets/NewDeveloperImg';
 import './Welcome.scss';
 
 const Welcome = () => (
   <div className="welcome">
-    <DeveloperSvg />
+    {/* <DeveloperSvg /> */}
     <div className="welcome__info">
       <TypeWriterEffect
         textStyle={{ fontFamily: 'Salsa', color: '#3F3D56' }}
@@ -37,6 +38,7 @@ const Welcome = () => (
         typeSpeed={80}
       />
     </div>
+    <NewDeveloperImg />
   </div>
 );
 

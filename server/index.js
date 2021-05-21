@@ -18,6 +18,8 @@ app.post('/sendMail', controller.validateRequest, controller.mailer);
 
 app.use(express.static(path.resolve(__dirname, '../dist')));
 
+app.use('/public', express.static(path.resolve(__dirname, '../public')));
+
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../dist/index.html'));
 });

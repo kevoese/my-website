@@ -4,6 +4,7 @@ import React from 'react';
 const ProjectDiv = ({ imgLink, appLink }) => (
   <a
     href={appLink}
+    target="_blank"
     className="project-div"
     style={{
       background: `url(${imgLink}) no-repeat center`,
