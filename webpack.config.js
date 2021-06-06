@@ -22,7 +22,7 @@ module.exports = (env, argv) => {
   return {
     entry: path.join(__dirname, 'src', 'App.js'),
     output: {
-      path: path.join(__dirname, 'dist'),
+      path: path.join(__dirname, ''),
       filename: 'app.bundle.js',
     },
     module: {
