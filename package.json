@@ -6,7 +6,7 @@
   "scripts": {
     "test": "",
     "build-app": "rimraf dist && mkdir dist && webpack --mode=production",
-    "build-gh-pages": "rimraf docs && webpack --mode=production",
+    "build-gh-pages": "rimraf docs && mkdir docs && webpack --mode=production",
     "start": "node server/index.js",
     "devserver": "nodemon server/index.js",
     "dev": "webpack-dev-server --mode=development",
