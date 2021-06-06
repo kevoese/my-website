@@ -115,8 +115,9 @@ const ContactMe = () => {
               <div className="btn-wrap">
                 <a
                   className="btn-design"
-                  href="/public/my-cv.pdf"
+                  href="https://hire-my-services.herokuapp.com/public/my-cv.pdf"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <span>Download my cv</span>
                   <img
