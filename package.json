@@ -6,7 +6,7 @@
   "scripts": {
     "test": "",
     "build-app": "rimraf dist && mkdir dist && webpack --mode=production",
-    "build-gh-pages": "rimraf dist && webpack --mode=production",
+    "build-gh-pages": "rimraf docs && webpack --mode=production",
     "start": "node server/index.js",
     "devserver": "nodemon server/index.js",
     "dev": "webpack-dev-server --mode=development",
@@ -14,7 +14,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "rimraf dist && webpack --mode=production && git add . && lint-staged"
+      "pre-commit": "rimraf docs && mkdir docs && webpack --mode=production && git add . && lint-staged"
     }
   },
   "lint-staged": {
