@@ -14,7 +14,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && rimraf dist && webpack --mode=production"
+      "pre-commit": "rimraf dist && webpack --mode=production && lint-staged"
     }
   },
   "lint-staged": {

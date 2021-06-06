@@ -1,2 +1,4 @@
 dist
 package.json
+app.bundle.js
+index.html
