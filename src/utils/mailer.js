@@ -7,7 +7,7 @@ const mailer = async (data, setMailState) => {
   try {
     setMailState({ loading: true });
     const result = await axiosCall({
-      url: '/sendMail',
+      url: 'https://hire-my-services.herokuapp.com/sendMail',
       data,
       method: 'POST',
     });
